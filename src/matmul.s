@@ -24,7 +24,6 @@
 #     this function terminates the program with exit code 38
 # =======================================================
 matmul:
-ebreak
     # Error checks
     bne a2, a4, error
     bge x0, a1, error

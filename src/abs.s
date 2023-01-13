@@ -9,7 +9,6 @@
 #   None
 # =================================================================
 abs:
-ebreak
   # Load number from memory
   lw t0 0(a0)
   bgt t0, zero, done

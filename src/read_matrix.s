@@ -25,7 +25,6 @@
 #     this function terminates the program with error code 29
 # ==============================================================================
 read_matrix:
-    ebreak
     # Prologue
     addi sp, sp, -20
     sw ra, 0(sp)
@@ -86,6 +85,8 @@ read_matrix:
     # close file
     jal x1, fclose
     bne a0, x0, fclose_error 
+
+
     add a0, s0, x0
 
     # Epilogue
